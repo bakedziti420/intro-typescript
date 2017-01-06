@@ -45,3 +45,4 @@ A **class** is a supercharged blueprint for an object.
 
 - [Udemy TypeScript Tutorial](https://www.udemy.com/typescript/learn/v4/overview)
 - [TypeScript Official Docs](https://www.typescriptlang.org/)
+- [TypeScript GitHub](https://github.com/Microsoft/TypeScript)
