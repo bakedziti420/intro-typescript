@@ -39,6 +39,8 @@ A **class** is a supercharged blueprint for an object.
 
 ### Compiling with Gulp
 
+[Gulp doc for TypeScript](https://www.typescriptlang.org/docs/handbook/gulp.html)
+
 ## Resources
 
 - [Udemy TypeScript Tutorial](https://www.udemy.com/typescript/learn/v4/overview)
