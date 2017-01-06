@@ -31,7 +31,13 @@ An **interface** is a blueprint for an object.
 
 A **class** is a supercharged blueprint for an object.
 
+**Inheritance** is a way for objects to access properties and methods of other objects.
+
 ### Modules
+
+**Modules** are a powerful way to share code between files.
+
+### Compiling with Gulp
 
 ## Resources
 
