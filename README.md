@@ -1,3 +1,5 @@
+<!-- Actually 11:13 -->
+
 <!--11:00 5 minutes -->
 
 <!--Hook: So throughout this course, we've been trying to teach you the legacy tools currently in use in web development, and slowly introducing the newer tools that are coming out.  One of the most useful new tools is TypeScript, for two main reasons: it provides functionality that JS developers have been asking for since the late 90s, and it was used to create many modern tools, most notably Angular 2 and Ionic 2 (an Angular-based framework for building mobile apps).  And as today is all about Angular 2, we should probably show you the language it's written in. -->
@@ -17,6 +19,8 @@
 
 <!--11:05 5 minutes -->
 
+<!--Actually 11:15 -->
+
 ## What is TypeScript?
 
 [From Stackoverflow](http://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-javascript):
@@ -26,6 +30,8 @@
 ### Why do we care?
 
 TypeScript is a more modern version of Javascript with many ES6 features and error handling, but most importantly, Angular 2 itself was written in TypeScript.  While you can use plain Javascript on top of it, most of the tutorials and docs available are written in TypeScript.  So rather than [trying to ice skate uphill](https://www.youtube.com/watch?v=pXhKzY0BKwY), we're going to set you up for a smooth Angular 2 transition.
+
+<!--Actually 11:17 -->
 
 <!--11:10 5 minutes -->
 
@@ -70,6 +76,10 @@ Next, we should compile this file with `tsc helloWorld.ts`.
 
 If we put the wrong type into a function (say, number for a string), TypeScript will throw an error when we compile.  Note that this does not affect our ability to run our JS code with `node`, but it is a great flag-raiser for potential issues.  And it lets us know *before* this code gets to our users.
 
+<!--Add note here about installing typescript package in 
+
+<!--Actually 11:36 -->
+
 ## Basic Features
 
 <!--11:25 10 minutes -->
@@ -101,10 +111,6 @@ var isWinter : boolean = true;
 
 var names : string[] = ["Hans", "Franz"];
 
-enum Starks {Jon, Bran, Eddard, Catlyn};
-
-var cat : Starks = Starks.Catlyn;
-
 -- Then talk about function casting:
 
 function getName() : string{
@@ -122,7 +128,11 @@ Every time we make a change, we will be compiling our `ts` to `js` with `tsc <fi
 
 If you want to know more about the available types and how to use them, check out this [Types Reference](https://www.typescriptlang.org/docs/handbook/basic-types.html).
 
+<!--Actually 12:02 -->
+
 ### Interfaces
+
+<!--Stopped doing catch-up-->
 
 <!--11:35 5 minutes -->
 
@@ -134,6 +144,12 @@ An **interface** is a blueprint for an object.  We can use it to define specific
 
 interface Stark {
 	name: String
+}
+
+-- And the function
+
+function printName(stark : Stark) {
+	console.log(stark.name);
 }
 
 -- Then call the following ways
@@ -154,6 +170,8 @@ printName({name:"Eddard"});
 printName({name: "Bran", age:22});
 
 -->
+
+<!-- Actually 12:09 -->
 
 ### Classes
 
@@ -198,6 +216,8 @@ class Stark {
 ned.hello("Bobert");
 
 -->
+
+<!--Actually 12:18 -->
 
 <!--11:50 10 minutes -->
 
@@ -249,6 +269,8 @@ robb.dance();
 	}
 
 -->
+
+<!--Actually 12:27 still not catch-up -->
 
 ### Modules
 
