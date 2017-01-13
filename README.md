@@ -270,9 +270,11 @@ robb.dance();
 
 -->
 
-<!--Actually 12:27 still not catch-up -->
+<!--Actually 12:27 still not catch-up, took break -->
 
 ### Modules
+
+<!--Actually 1:39 -->
 
 <!--12:00 5 minutes -->
 
@@ -355,3 +357,5 @@ Now run `node scripts/output.js`.  We see all our files' output.  Cool, right?  
 - [TypeScript GitHub](https://github.com/Microsoft/TypeScript)
 - [Why should I](http://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-javascript) [use TypeScript?](http://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-javascript/35048303#35048303)
 - [Gulp doc for TypeScript](https://www.typescriptlang.org/docs/handbook/gulp.html)
+
+<!-- Actually 2:10 -->
