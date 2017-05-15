@@ -1,6 +1,6 @@
 <!-- Actually 11:13 -->
 
-<!--11:00 5 minutes -->
+<!--9:05 5 minutes -->
 
 <!--Hook: So throughout this course, we've been trying to teach you the legacy tools currently in use in web development, and slowly introducing the newer tools that are coming out.  One of the most useful new tools is TypeScript, for two main reasons: it provides functionality that JS developers have been asking for since the late 90s, and it was used to create many modern tools, most notably Angular 2 and Ionic 2 (an Angular-based framework for building mobile apps).  And as today is all about Angular 2, we should probably show you the language it's written in. -->
 
@@ -17,7 +17,7 @@
 - **Share** code between files with modules
 - **Automatically compile** TypeScript into Javascript with Gulp
 
-<!--11:05 5 minutes -->
+<!--9:10 5 minutes -->
 
 <!--Actually 11:15 -->
 
@@ -33,7 +33,7 @@ TypeScript is a more modern version of Javascript with many ES6 features and err
 
 <!--Actually 11:17 -->
 
-<!--11:10 5 minutes -->
+<!--9:15 5 minutes -->
 
 ## Installation and Setup
 
@@ -47,7 +47,7 @@ Now let's build out our first file.  Make a new directory called `typeScriptTest
 
 We will fill this file out together.
 
-<!--11:15 10 minutes -->
+<!--9:20 15 minutes -->
 
 <!-- Catch-up with code below
 
@@ -76,13 +76,11 @@ Next, we should compile this file with `tsc helloWorld.ts`.
 
 If we put the wrong type into a function (say, number for a string), TypeScript will throw an error when we compile.  Note that this does not affect our ability to run our JS code with `node`, but it is a great flag-raiser for potential issues.  And it lets us know *before* this code gets to our users.
 
-<!--Add note here about installing typescript package in 
-
 <!--Actually 11:36 -->
 
 ## Basic Features
 
-<!--11:25 10 minutes -->
+<!--9:35 20 minutes -->
 
 ### Types
 
@@ -92,7 +90,7 @@ TypeScript comes with several built in **types** similar to the ones we're used 
 
 -- First start with:
 
-var numero : Number = 1;
+var numero : number = 1;
 numero = 2;
 
 -- Then:
@@ -103,7 +101,7 @@ numero = "fish";
 
 --Then go through the other major types:
 
-var namey : String = "Bobz";
+var namey : string = "Bobz";
 
 var isWinter : boolean = true;
 
@@ -134,7 +132,7 @@ If you want to know more about the available types and how to use them, check ou
 
 <!--Stopped doing catch-up-->
 
-<!--11:35 5 minutes -->
+<!--9:55 10 minutes -->
 
 An **interface** is a blueprint for an object.  We can use it to define specific required properties or methods of objects.  Create a new file called `interfaces.ts` and follow along...
 
@@ -143,7 +141,7 @@ An **interface** is a blueprint for an object.  We can use it to define specific
 -- Create the interface
 
 interface Stark {
-	name: String
+	name: string
 }
 
 -- And the function
@@ -161,7 +159,7 @@ printName({age:22});
 -- Talk about the error that comes up, then adjust
 
 interface Stark {
-	name: String,
+	name: string,
 	age?: number
 }
 
@@ -175,7 +173,7 @@ printName({name: "Bran", age:22});
 
 ### Classes
 
-<!--11:40 10 minutes -->
+<!--10:05 10 minutes -->
 
 A **class** is a supercharged blueprint for an object.
 
@@ -189,7 +187,7 @@ Create a new file called `classes.ts` and follow along...
 
 class Stark {
 	name: string = "Brandon";
-	saying: String;
+	saying: string;
 }
 
 -- Then instantiate it
@@ -219,7 +217,7 @@ ned.hello("Bobert");
 
 <!--Actually 12:18 -->
 
-<!--11:50 10 minutes -->
+<!--10:15 10 minutes -->
 
 ### Inheritance
 
@@ -276,7 +274,7 @@ robb.dance();
 
 <!--Actually 1:39 -->
 
-<!--12:00 5 minutes -->
+<!--10:25 5 minutes -->
 
 **Modules** are a powerful way to share code between files.  In TypeScript, the functionality is similar to Node, but the syntax is a little different.  Let's see how.
 
@@ -310,7 +308,7 @@ console.log(multiplication.timesTwo(9));
 
 ### Compiling with Gulp
 
-<!--12:05 10 minutes -->
+<!--10:30 10 minutes -->
 
 Wouldn't it be annoying if the only way to convert TypeScript into Javascript was by running `tsc` every time we made a change?  It's too bad we don't know any tools that could do this automatically for us...
 
