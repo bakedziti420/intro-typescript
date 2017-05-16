@@ -1,5 +1,6 @@
 <!-- Actually 11:13 -->
 
+<!--WDI3 9:09 -->
 <!--9:05 5 minutes -->
 
 <!--Hook: So throughout this course, we've been trying to teach you the legacy tools currently in use in web development, and slowly introducing the newer tools that are coming out.  One of the most useful new tools is TypeScript, for two main reasons: it provides functionality that JS developers have been asking for since the late 90s, and it was used to create many modern tools, most notably Angular 2 and Ionic 2 (an Angular-based framework for building mobile apps).  And as today is all about Angular 2, we should probably show you the language it's written in. -->
@@ -17,6 +18,7 @@
 - **Share** code between files with modules
 - **Automatically compile** TypeScript into Javascript with Gulp
 
+<!--WDI3 9:12 -->
 <!--9:10 5 minutes -->
 
 <!--Actually 11:15 -->
@@ -47,6 +49,8 @@ Now let's build out our first file.  Make a new directory called `typeScriptTest
 
 We will fill this file out together.
 
+
+<!--9:19 coming back from first set -->
 <!--9:20 15 minutes -->
 
 <!-- Catch-up with code below
@@ -56,16 +60,16 @@ console.log("Hello World");
 
 -- then add a function
 
-function hello(string) {
-	console.log("Hello " + string);
+function hello(stringy) {
+	console.log("Hello " + stringy);
 }
 
 hello("universe");
 
 --then make it Typescripty
 
-function hello(string: String) {
-	console.log("Hello " + string);
+function hello(stringy: string) {
+	console.log("Hello " + stringy);
 }
 
 hello("universe");
@@ -76,6 +80,7 @@ Next, we should compile this file with `tsc helloWorld.ts`.
 
 If we put the wrong type into a function (say, number for a string), TypeScript will throw an error when we compile.  Note that this does not affect our ability to run our JS code with `node`, but it is a great flag-raiser for potential issues.  And it lets us know *before* this code gets to our users.
 
+<!--WDI3 9:26 -->
 <!--Actually 11:36 -->
 
 ## Basic Features
@@ -99,6 +104,8 @@ numero = "fish";
 
 --And talk about the error you see together
 
+<!--WDI 3 9:32 -->
+
 --Then go through the other major types:
 
 var namey : string = "Bobz";
@@ -108,6 +115,8 @@ var isWinter : boolean = true;
 --Pause before moving onto more complex types:
 
 var names : string[] = ["Hans", "Franz"];
+
+<!--WDI3 9:37 when back from dev typing -->
 
 -- Then talk about function casting:
 
@@ -132,6 +141,7 @@ If you want to know more about the available types and how to use them, check ou
 
 <!--Stopped doing catch-up-->
 
+<!--WDI3 9:45 -->
 <!--9:55 10 minutes -->
 
 An **interface** is a blueprint for an object.  We can use it to define specific required properties or methods of objects.  Create a new file called `interfaces.ts` and follow along...
@@ -154,6 +164,8 @@ function printName(stark : Stark) {
 
 printName({name:"Eddard"});
 
+<!--WDI3 9:52 -->
+
 printName({age:22});
 
 -- Talk about the error that comes up, then adjust
@@ -173,6 +185,7 @@ printName({name: "Bran", age:22});
 
 ### Classes
 
+<!--WDI3 9:55 -->
 <!--10:05 10 minutes -->
 
 A **class** is a supercharged blueprint for an object.
@@ -200,6 +213,8 @@ console.log(ned.saying);
 
 -- Look familiar?  That's right, it's basically a constructor function--take a look at compiled JS
 
+<!--WDI3 10:02 -->
+
 -- How do we put a method on the prototype?
 
 class Stark {
@@ -215,8 +230,9 @@ ned.hello("Bobert");
 
 -->
 
-<!--Actually 12:18 -->
+<!--Actually 12:18 WDI2-->
 
+<!--WDI3 10:08 -->
 <!--10:15 10 minutes -->
 
 ### Inheritance
@@ -274,11 +290,12 @@ robb.dance();
 
 <!--Actually 1:39 -->
 
+<!--WDI3 10:26 -->
 <!--10:25 5 minutes -->
 
 **Modules** are a powerful way to share code between files.  In TypeScript, the functionality is similar to Node, but the syntax is a little different.  Let's see how.
 
-We want to gather all our `util`ities in one file, but allow them to be included independently, elsewhere.  For instance, we have a lot of *very advanced* mathematical methods that we'd like to include in many places.  Create a file called `math.ts` and follow along:
+We want to gather all our `main` code in one file, but allow them to be included independently, elsewhere.  For instance, we have a lot of *very advanced* mathematical methods that we'd like to include in many places.  Create a file called `math.ts` and follow along:
 
 <!-- Catch-up for code below
 
@@ -292,7 +309,9 @@ export class Multiplication {
 
 -->
 
-And now create a file called `utils.ts` and follow along:
+<!--10:30 WDI3 -->
+
+And now create a file called `main.ts` and follow along:
 
 <!-- Catch-up for code below
 
@@ -308,6 +327,7 @@ console.log(multiplication.timesTwo(9));
 
 ### Compiling with Gulp
 
+<!--10:36 WDI3 -->
 <!--10:30 10 minutes -->
 
 Wouldn't it be annoying if the only way to convert TypeScript into Javascript was by running `tsc` every time we made a change?  It's too bad we don't know any tools that could do this automatically for us...
@@ -347,6 +367,8 @@ gulp.task('default', function () {
 ```
 
 Now run `node scripts/output.js`.  We see all our files' output.  Cool, right?  Now in our HTML we only need to include one file, but when we're coding we have several files to keep everything organized in our heads.
+
+<!--10:48 WDI3-->
 
 ## Resources
 
