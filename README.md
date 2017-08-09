@@ -109,7 +109,7 @@ numero = "fish";
 
 <!--WDI 3 9:32 -->
 
---Then go through the other major types:
+<!--Then go through the other major types:
 
 var namey : string = "Bobz";
 
@@ -137,6 +137,8 @@ function noReturn() : void {
 -->
 
 Every time we make a change, we will be compiling our `ts` to `js` with `tsc <fileName>.ts`.
+
+<!--2:21 WDI4 -->
 
 If you want to know more about the available types and how to use them, check out this [Types Reference](https://www.typescriptlang.org/docs/handbook/basic-types.html).
 
