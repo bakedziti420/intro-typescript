@@ -387,7 +387,7 @@ gulp.task('default', function () {
 
 Now run `node scripts/output.js`.  We see all our files' output.  Cool, right?  Now in our HTML we only need to include one file, but when we're coding we have several files to keep everything organized in our heads.
 
-<!--WDI4 3:30-->
+<!--WDI4 3:32-->
 <!--10:48 WDI3-->
 
 ## Resources
