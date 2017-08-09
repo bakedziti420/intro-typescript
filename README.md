@@ -222,6 +222,7 @@ console.log(ned.saying);
 -- Look familiar?  That's right, it's basically a constructor function--take a look at compiled JS
 -->
 
+<!--WDI4 2:38 -->
 <!--WDI3 10:02 -->
 
 <!-- How do we put a method on the prototype?
@@ -242,6 +243,7 @@ ned.hello("Bobert");
 <!--Actually 12:18 WDI2-->
 
 <!--WDI3 10:08 -->
+<!--WDI4 2:42 -->
 <!--10:15 10 minutes -->
 
 ### Inheritance
@@ -273,7 +275,11 @@ var bran = new Person("Bran");
 
 bran.dance();
 
--- Then extend:
+-->
+
+<!--WDI4 2:48 -->
+
+<!-- Then extend:
 
 class CoolPerson extends Person {
 	dance() {
@@ -294,12 +300,14 @@ robb.dance();
 -->
 
 <!--Actually 12:27 still not catch-up, took break -->
+<!--3:00 WDI4 -->
 
 ### Modules
 
 <!--Actually 1:39 -->
 
 <!--WDI3 10:26 -->
+<!--WDI4 3:11 -->
 <!--10:25 5 minutes -->
 
 **Modules** are a powerful way to share code between files.  In TypeScript, the functionality is similar to Node, but the syntax is a little different.  Let's see how.
@@ -324,15 +332,17 @@ And now create a file called `main.ts` and follow along:
 
 <!-- Catch-up for code below
 
-import math = require("./math");
+import { Multiplication } from './math';
 
-var multiplication = new math.Multiplication();
+let multiplication = new Multiplication();
 
 console.log(multiplication.timesTwo(9));
 
--- Now try running utils.js...what happens?
+-- Now try running main.js...what happens?
 
 -->
+
+<!--WDI4 3:19 -->
 
 ### Compiling with Gulp
 
@@ -377,6 +387,7 @@ gulp.task('default', function () {
 
 Now run `node scripts/output.js`.  We see all our files' output.  Cool, right?  Now in our HTML we only need to include one file, but when we're coding we have several files to keep everything organized in our heads.
 
+<!--WDI4 3:30-->
 <!--10:48 WDI3-->
 
 ## Resources
