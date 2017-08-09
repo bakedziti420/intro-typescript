@@ -138,7 +138,7 @@ function noReturn() : void {
 
 Every time we make a change, we will be compiling our `ts` to `js` with `tsc <fileName>.ts`.
 
-<!--2:21 WDI4 -->
+<!--2:23 WDI4 -->
 
 If you want to know more about the available types and how to use them, check out this [Types Reference](https://www.typescriptlang.org/docs/handbook/basic-types.html).
 
@@ -172,7 +172,7 @@ function printName(stark : Stark) {
 printName({name:"Eddard"});
 -->
 <!--WDI3 9:52 -->
-
+<!--WDI4 2:25 turning over to devs, 2:27 coming back -->
 <!--printName({age:22});
 
 -- Talk about the error that comes up, then adjust
@@ -189,6 +189,7 @@ printName({name: "Bran", age:22});
 -->
 
 <!-- Actually 12:09 -->
+<!--WDI4 2:31 -->
 
 ### Classes
 
@@ -219,10 +220,11 @@ ned.saying = "Winter is coming!";
 console.log(ned.saying);
 
 -- Look familiar?  That's right, it's basically a constructor function--take a look at compiled JS
+-->
 
 <!--WDI3 10:02 -->
 
--- How do we put a method on the prototype?
+<!-- How do we put a method on the prototype?
 
 class Stark {
 	name: string = "Brandon";
