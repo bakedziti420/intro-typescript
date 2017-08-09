@@ -170,10 +170,10 @@ function printName(stark : Stark) {
 -- Then call the following ways
 
 printName({name:"Eddard"});
-
+-->
 <!--WDI3 9:52 -->
 
-printName({age:22});
+<!--printName({age:22});
 
 -- Talk about the error that comes up, then adjust
 
