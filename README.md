@@ -85,6 +85,7 @@ If we put the wrong type into a function (say, number for a string), TypeScript 
 
 ## Basic Features
 
+<!--WDI4 Quickly reviewed top parts (they are already in other lesson) then got to here at about 2:14 -->
 <!--9:35 20 minutes -->
 
 ### Types
@@ -104,6 +105,8 @@ numero = "fish";
 
 --And talk about the error you see together
 
+-->
+
 <!--WDI 3 9:32 -->
 
 --Then go through the other major types:
@@ -116,9 +119,11 @@ var isWinter : boolean = true;
 
 var names : string[] = ["Hans", "Franz"];
 
+-->
+
 <!--WDI3 9:37 when back from dev typing -->
 
--- Then talk about function casting:
+<!-- Then talk about function casting:
 
 function getName() : string{
 	return 1;
